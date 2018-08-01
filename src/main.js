@@ -1,6 +1,6 @@
 import Vue from 'nativescript-vue';
 
-import router from './router';
+// import router from './router';
 
 import store from './store';
 
@@ -10,11 +10,16 @@ import './styles.scss';
 //Vue.config.silent = false;
 var application = require("application");
 
-
 new Vue({
 
-  router,
+  //router,
 
   store,
 
-}).$start();
+  template: `
+    <Frame>
+      <Page>
+      </Page>
+    </Frame>
+  `
+}).$start()
